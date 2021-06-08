@@ -4,13 +4,13 @@ Repository for Academind's "Understanding TypeScript" course. More [here](https:
 
 ## Installing & Using TypeScript
 
-Global install:
+Global:
 
 ```
 npm install -g typescript
 ```
 
-Project install:
+Local:
 
 ```
 npm install typescript --save-dev
@@ -18,8 +18,8 @@ npm install typescript --save-dev
 
 ## Core Types
 
-| Type      | Example                 | Notes                 |
-| --------- | ----------------------- | --------------------- |
-| `number`  | 1, 5.8, -10             | Integers, floats etc. |
-| `string`  | `` "Hi", 'Hi', `Hi`  `` | All text values       |
-| `boolean` | true or false           |
+| Type      | Example                | Notes                 |
+| --------- | ---------------------- | --------------------- |
+| `number`  | `1, 5.8, -10`          | Integers, floats etc. |
+| `string`  | `` "Hi", 'Hi', `Hi` `` | All text values       |
+| `boolean` | `true or false`        |
