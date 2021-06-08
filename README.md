@@ -2,19 +2,21 @@
 
 Repository for Academind's "Understanding TypeScript" course. More [here](https://www.udemy.com/course/understanding-typescript).
 
-## Installing & Using TypeScript
+## Installing
 
 Global:
-
-```
-npm install -g typescript
-```
+`npm install -g typescript`
 
 Local:
+`npm install typescript --save-dev`
 
-```
-npm install typescript --save-dev
-```
+## Compiling
+
+Single file:
+`tsc app.ts`
+
+Watch file changes:
+`tsc app.ts -w`
 
 ## Core Types
 
@@ -22,4 +24,5 @@ npm install typescript --save-dev
 | --------- | ---------------------- | --------------------- |
 | `number`  | `1, 5.8, -10`          | Integers, floats etc. |
 | `string`  | `` "Hi", 'Hi', `Hi` `` | All text values       |
-| `boolean` | `true or false`        |
+| `boolean` | `true or false`        |                       |
+| `...`     |                        |                       |
