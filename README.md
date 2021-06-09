@@ -6,27 +6,37 @@ Repository for Academind's "Understanding TypeScript" course. More [here](https:
 
 Global:
 
-`npm install -g typescript`
+```
+npm install -g typescript
+```
 
 Local:
 
-`npm install typescript --save-dev`
+```
+npm install typescript --save-dev
+```
 
 ## Initializing
 
 Create `tsconfig.json` in the folder:
 
-`tsc --init`
+```
+tsc --init
+```
 
 ## Compiling
 
 Single file:
 
-`tsc app.ts`
+```
+tsc app.ts
+```
 
 Watch file changes:
 
-`tsc app.ts -w`
+```
+tsc app.ts -w
+```
 
 ## Core Types
 
