@@ -1,12 +1,18 @@
-function add(n1: number, n2: number, showResult: boolean, phrase: string) {
-  const result = n1 + n2;
-  if (showResult) console.log(phrase + result);
-  return result;
-}
+// unnecessarily specific object types
 
-const number1 = 10;
-const number2 = 6.3;
-const printResult = true;
-const resultPhrase = "The result is ";
+const person1: {
+  name: string;
+  age: number;
+} = {
+  name: "Ayrton",
+  age: 30,
+};
 
-add(number1, number2, printResult, resultPhrase);
+// preferred inferred object types
+
+const person2 = {
+  name: "Ayrton",
+  age: 30,
+};
+
+console.log(person2.name);
