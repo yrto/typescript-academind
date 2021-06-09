@@ -1,4 +1,4 @@
-const addNumbers = (
+const addNumbers1 = (
   n1: number,
   n2: number,
   showResult: boolean,
@@ -14,4 +14,4 @@ const number2 = 6.3; // TS is capable of inferring types
 const printResult = true;
 const resultPhrase = "The result is ";
 
-addNumbers(number1, number2, printResult, resultPhrase);
+addNumbers1(number1, number2, printResult, resultPhrase);
