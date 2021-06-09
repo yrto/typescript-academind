@@ -1,6 +1,6 @@
 // unnecessarily specific object types
 
-const person1: {
+const person0: {
   name: string;
   age: number;
 } = {
@@ -10,9 +10,15 @@ const person1: {
 
 // preferred inferred object types
 
-const person2 = {
+const person1 = {
   name: "Ayrton",
   age: 30,
+  hobbies: ["gaming", "cooking"],
 };
 
-console.log(person2.name);
+let favoriteActivities: string[]; // array of strings: totally specific
+let favoriteSports: any[]; // elements of any type: flexible but not really the point in TS
+
+console.log(person1.name);
+
+for (const hobby of person1.hobbies) console.log(hobby.toUpperCase());

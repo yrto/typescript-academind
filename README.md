@@ -46,4 +46,5 @@ tsc app.ts -w
 | `string`  | `` "Hi", 'Hi', `Hi` `` | All text values                                              |
 | `boolean` | `true or false`        |                                                              |
 | `object`  | `{ age: 30 }`          | Pairs of `key` and `type` ending with `;` that can be nested |
+| `array`   | `[1,2,3]`              |                                                              |
 | `...`     |                        |                                                              |
