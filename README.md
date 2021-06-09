@@ -47,4 +47,6 @@ tsc app.ts -w
 | `boolean` | `true or false`        |                                                              |
 | `object`  | `{ age: 30 }`          | Pairs of `key` and `type` ending with `;` that can be nested |
 | `array`   | `[1,2,3]`              |                                                              |
+| `tuple`   | [1,2]                  | Array of fixed-length (TS extension)                         |
+| `enum`    | `enum { NEW, OLD }`    | Enumerated constant identifiers (TS extension)               |
 | `...`     |                        |                                                              |
