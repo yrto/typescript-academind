@@ -1,7 +1,7 @@
 // global constants use case for the "enum" custom type
 
 enum Role {
-  ADMIN = 5, // possible to start at any value
+  ADMIN = 5, // possible to assign/start any value
   USER,
   GUEST,
 }

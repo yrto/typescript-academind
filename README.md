@@ -44,9 +44,10 @@ tsc app.ts -w
 | --------- | ---------------------- | ------------------------------------------------------------ |
 | `number`  | `1, 5.8, -10`          | Integers, floats etc.                                        |
 | `string`  | `` "Hi", 'Hi', `Hi` `` | All text values                                              |
-| `boolean` | `true or false`        |                                                              |
+| `boolean` | `true or false`        |
 | `object`  | `{ age: 30 }`          | Pairs of `key` and `type` ending with `;` that can be nested |
-| `array`   | `[1,2,3]`              |                                                              |
+| `array`   | `[1,2,3]`              |
 | `tuple`   | `[1,2]`                | Array of fixed-length (TS extension)                         |
 | `enum`    | `enum { NEW, OLD }`    | Enumerated constant identifiers (TS extension)               |
-| `...`     |                        |                                                              |
+| `any`     | `*`                    | No specific type assignment                                  |
+| `...`     |
