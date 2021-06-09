@@ -40,10 +40,10 @@ tsc app.ts -w
 
 ## Core Types
 
-| Type      | Example                | Notes                     |
-| --------- | ---------------------- | ------------------------- |
-| `number`  | `1, 5.8, -10`          | Integers, floats etc.     |
-| `string`  | `` "Hi", 'Hi', `Hi` `` | All text values           |
-| `boolean` | `true or false`        |                           |
-| `object`  | `{ age: 30 }`          | Pairs of `key` and `type` |
-| `...`     |                        |                           |
+| Type      | Example                | Notes                                     |
+| --------- | ---------------------- | ----------------------------------------- |
+| `number`  | `1, 5.8, -10`          | Integers, floats etc.                     |
+| `string`  | `` "Hi", 'Hi', `Hi` `` | All text values                           |
+| `boolean` | `true or false`        |                                           |
+| `object`  | `{ age: 30 }`          | Pairs of `key` and `type` ending with `;` |
+| `...`     |                        |                                           |
