@@ -1,10 +1,12 @@
-const addNumbers = (
-  n1: number,
-  n2: number,
-  showResult: boolean,
-  phrase: string
-) => {
-  const result = n1 + n2;
-  if (showResult) console.log(phrase + result);
-  return result;
+const combine = (input1: number | string, input2: number | string) => {
+  if (typeof input1 === "number" && typeof input2 === "number") {
+    return input1 + input2;
+  }
+  return input1.toString() + input2.toString();
 };
+
+const combinedAges = combine(30, 26);
+const combinedNames = combine("Ayrton", "Mugnaini");
+
+console.log(combinedAges);
+console.log(combinedNames);
