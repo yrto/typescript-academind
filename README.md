@@ -54,7 +54,7 @@ tsc app.ts -w
 
 ## Union Types
 
-Allows flexibility with parameters:
+Allows flexibility with parameters, but may require extra logic to handle:
 
 ```typescript
 const combine = (input1: number | string, input2: number | string) => {
