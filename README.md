@@ -108,7 +108,7 @@ printNumberOrString(99);
 printNumberOrString("olá");
 ```
 
-It's also possible to provide an alias to a (possibly complex) object type.
+It's also possible to provide an alias to a (possibly complex) object type. This avoids unnecessary repetition.
 
 ```typescript
 type User = { name: string; age: number };
