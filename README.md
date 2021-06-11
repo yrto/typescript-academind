@@ -107,3 +107,10 @@ const printNumberOrString = (myInput: numberOrString) => {
 printNumberOrString(99);
 printNumberOrString("olá");
 ```
+
+It's also possible to provide an alias to a (possibly complex) object type.
+
+```typescript
+type User = { name: string; age: number };
+const u1: User = { name: "Max", age: 30 };
+```
