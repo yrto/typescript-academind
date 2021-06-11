@@ -72,7 +72,7 @@ console.log(combinedNames);
 
 ## Literal Types
 
-Parameter(s) should be equal to predetermined values. Even more powerful when combined with union types:
+Parameter(s) should be equal to predetermined value(s). Very powerful when combined with union types:
 
 ```typescript
 const double = (
@@ -91,4 +91,19 @@ const doubleAsString = double("30", "as-string");
 
 console.log(doubleAsNumber);
 console.log(doubleAsString);
+```
+
+## Type Aliases
+
+Uses the reserved word `type` to declare a type (or union type!) alias.
+
+```typescript
+type numberOrString = number | string;
+
+const printNumberOrString = (myInput: numberOrString) => {
+  console.log(myInput);
+};
+
+printNumberOrString(99);
+printNumberOrString("olá");
 ```
