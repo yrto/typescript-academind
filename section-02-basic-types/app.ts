@@ -9,8 +9,8 @@ const double = (
   }
 };
 
-const doubleAsString = double(30, "as-number");
-const doubleAsNumber = double("30", "as-text");
+const doubleAsNumber = double(30, "as-number");
+const doubleAsString = double("30", "as-text");
 
-console.log(doubleAsString);
 console.log(doubleAsNumber);
+console.log(doubleAsString);

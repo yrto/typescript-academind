@@ -77,7 +77,7 @@ Parameter(s) should be equal to predetermined values. Even more powerful when co
 ```typescript
 const double = (
   myInput: number | string,
-  resultConversionType: "as-number" | "as-text"
+  resultConversionType: "as-number" | "as-string"
 ) => {
   if (typeof myInput === "number" || resultConversionType === "as-number")
     return +myInput * 2;
@@ -86,9 +86,9 @@ const double = (
   }
 };
 
-const doubleAsString = double(30, "as-number");
-const doubleAsNumber = double("30", "as-text");
+const doubleAsNumber = double(30, "as-number");
+const doubleAsString = double("30", "as-string");
 
-console.log(doubleAsString);
 console.log(doubleAsNumber);
+console.log(doubleAsString);
 ```
