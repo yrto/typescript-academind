@@ -72,7 +72,7 @@ console.log(combinedNames);
 
 ## Literal Types
 
-Even more powerful if combined with union types:
+Parameter(s) should be equal to predetermined values. Even more powerful when combined with union types:
 
 ```typescript
 const double = (
