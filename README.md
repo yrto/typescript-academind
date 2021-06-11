@@ -50,7 +50,6 @@ tsc app.ts -w
 | `tuple`   | `[1,2]`                | Array of fixed-length (TS extension)                         |
 | `enum`    | `enum { NEW, OLD }`    | Enumerated constant identifiers (TS extension)               |
 | `any`     | `*`                    | No specific type assignment                                  |
-| `...`     |
 
 ## Union Types
 
@@ -69,4 +68,27 @@ const combinedNames = combine("Ayrton", "Mugnaini");
 
 console.log(combinedAges);
 console.log(combinedNames);
+```
+
+## Literal Types
+
+Even more powerful if combined with union types:
+
+```typescript
+const double = (
+  myInput: number | string,
+  resultConversionType: "as-number" | "as-text"
+) => {
+  if (typeof myInput === "number" || resultConversionType === "as-number")
+    return +myInput * 2;
+  else {
+    return myInput.toString().repeat(2);
+  }
+};
+
+const doubleAsString = double(30, "as-number");
+const doubleAsNumber = double("30", "as-text");
+
+console.log(doubleAsString);
+console.log(doubleAsNumber);
 ```

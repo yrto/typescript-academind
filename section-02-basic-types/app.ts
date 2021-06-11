@@ -1,12 +1,16 @@
-const combine = (input1: number | string, input2: number | string) => {
-  if (typeof input1 === "number" && typeof input2 === "number") {
-    return input1 + input2;
+const double = (
+  myInput: number | string,
+  resultConversionType: "as-number" | "as-text"
+) => {
+  if (typeof myInput === "number" || resultConversionType === "as-number")
+    return +myInput * 2;
+  else {
+    return myInput.toString().repeat(2);
   }
-  return input1.toString() + input2.toString();
 };
 
-const combinedAges = combine(30, 26);
-const combinedNames = combine("Ayrton", "Mugnaini");
+const doubleAsString = double(30, "as-number");
+const doubleAsNumber = double("30", "as-text");
 
-console.log(combinedAges);
-console.log(combinedNames);
+console.log(doubleAsString);
+console.log(doubleAsNumber);
