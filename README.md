@@ -26,30 +26,43 @@ tsc --init
 
 ## Compiling
 
-Single file:
+Compile single file (if installed globally):
 
 ```
 tsc app.ts
 ```
 
-Watch file changes:
+Compile all files:
+
+```
+npx tsc
+```
+
+Watch file changes (if installed globally):
 
 ```
 tsc app.ts -w
 ```
 
+Watch all file changes:
+
+```
+npx tsc -w
+```
+
 ## Core Types
 
-| Type      | Example                | Notes                                                        |
-| --------- | ---------------------- | ------------------------------------------------------------ |
-| `number`  | `1, 5.8, -10`          | Integers, floats etc.                                        |
-| `string`  | `` "Hi", 'Hi', `Hi` `` | All text values                                              |
-| `boolean` | `true or false`        |
-| `object`  | `{ age: 30 }`          | Pairs of `key` and `type` ending with `;` that can be nested |
-| `array`   | `[1,2,3]`              |
-| `tuple`   | `[1,2]`                | Array of fixed-length (TS extension)                         |
-| `enum`    | `enum { NEW, OLD }`    | Enumerated constant identifiers (TS extension)               |
-| `any`     | `*`                    | No specific type assignment                                  |
+| Type       | Example                | Notes                                                        |
+| ---------- | ---------------------- | ------------------------------------------------------------ |
+| `number`   | `1, 5.8, -10`          | Integers, floats etc.                                        |
+| `string`   | `` "Hi", 'Hi', `Hi` `` | All text values                                              |
+| `boolean`  | `true or false`        |
+| `object`   | `{ age: 30 }`          | Pairs of `key` and `type` ending with `;` that can be nested |
+| `array`    | `[1,2,3]`              |
+| `tuple`    | `[1,2]`                | Array of fixed-length (TS extension)                         |
+| `enum`     | `enum { NEW, OLD }`    | Enumerated constant identifiers (TS extension)               |
+| `any`      | `*`                    | No specific type assignment                                  |
+| `function` |
 
 ## Union Types
 
@@ -113,4 +126,18 @@ It's also possible to provide an alias to a (possibly complex) object type. This
 ```typescript
 type User = { name: string; age: number };
 const u1: User = { name: "Max", age: 30 };
+```
+
+## Function Types
+
+Alow us to describe the structure of a function we want as a type:
+
+```typescript
+const add = (n1: number, n2: number) => {
+  return n1 + n2;
+};
+
+let combineValues: (a: number, b: number) => number;
+
+combineValues = add;
 ```
