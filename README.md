@@ -38,7 +38,7 @@ Compile all files:
 npx tsc
 ```
 
-Watch file changes (if installed globally):
+Watch all file changes (if installed globally):
 
 ```
 tsc app.ts -w
