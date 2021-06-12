@@ -162,7 +162,7 @@ addAndHandle(10, 20, (result) => {
 });
 ```
 
-## Unkown Type
+## Unknown Type
 
 More restrictive than `any`, needs a type check before handling assignments:
 
