@@ -177,3 +177,15 @@ if (typeof userInput === "string") {
   console.log(userName);
 }
 ```
+
+## Never Type
+
+Makes it clear that the function `never` returns anything (throws an error or creates an infinite loop, for example):
+
+```typescript
+const generateError = (message: string, code: number): never => {
+  throw { message: message, errorCode: code };
+};
+
+generateError("An error occurred!", 500);
+```
