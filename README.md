@@ -129,7 +129,7 @@ const u1: User = { name: "Max", age: 30 };
 
 ## Function Type
 
-Alow us to describe the structure of a function we want as a type:
+Alows us to describe the structure of a function we want as a type:
 
 ```typescript
 const add = (n1: number, n2: number) => {
