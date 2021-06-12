@@ -161,3 +161,19 @@ addAndHandle(10, 20, (result) => {
   console.log("result: ", result);
 });
 ```
+
+## Unkown Type
+
+More restrictive than `any`, needs a type check before handling assignments:
+
+```typescript
+let userInput: unknown;
+let userName: string;
+
+userInput = "Ayrton";
+
+if (typeof userInput === "string") {
+  userName = userInput;
+  console.log(userName);
+}
+```
