@@ -63,7 +63,7 @@ npx tsc -w
 | `enum`    | `enum { NEW, OLD }`    | Enumerated constant identifiers (TS extension)               |
 | `any`     | `*`                    | No specific type assignment                                  |
 
-## Union Types
+## Union Type
 
 Allows flexibility with parameters, but may require extra logic to handle:
 
@@ -82,7 +82,7 @@ console.log(combinedAges);
 console.log(combinedNames);
 ```
 
-## Literal Types
+## Literal Type
 
 Parameter(s) should be equal to predetermined value(s). Very powerful when combined with union types:
 
@@ -105,7 +105,7 @@ console.log(doubleAsNumber);
 console.log(doubleAsString);
 ```
 
-## Type Aliases
+## Type Alias
 
 Uses the reserved word `type` to declare a type (or union type!) alias.
 
@@ -127,7 +127,7 @@ type User = { name: string; age: number };
 const u1: User = { name: "Max", age: 30 };
 ```
 
-## Function Types
+## Function Type
 
 Alow us to describe the structure of a function we want as a type:
 
