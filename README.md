@@ -180,7 +180,7 @@ if (typeof userInput === "string") {
 
 ## Never Type
 
-Makes it clear that the function `never` returns anything (throws an error or creates an infinite loop, for example):
+Makes it clear that a function `never` returns anything (throws an error or creates an infinite loop, for example):
 
 ```typescript
 const generateError = (message: string, code: number): never => {
