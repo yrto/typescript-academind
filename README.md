@@ -52,17 +52,16 @@ npx tsc -w
 
 ## Core Types
 
-| Type       | Example                | Notes                                                        |
-| ---------- | ---------------------- | ------------------------------------------------------------ |
-| `number`   | `1, 5.8, -10`          | Integers, floats etc.                                        |
-| `string`   | `` "Hi", 'Hi', `Hi` `` | All text values                                              |
-| `boolean`  | `true or false`        |
-| `object`   | `{ age: 30 }`          | Pairs of `key` and `type` ending with `;` that can be nested |
-| `array`    | `[1,2,3]`              |
-| `tuple`    | `[1,2]`                | Array of fixed-length (TS extension)                         |
-| `enum`     | `enum { NEW, OLD }`    | Enumerated constant identifiers (TS extension)               |
-| `any`      | `*`                    | No specific type assignment                                  |
-| `function` |
+| Type      | Example                | Notes                                                        |
+| --------- | ---------------------- | ------------------------------------------------------------ |
+| `number`  | `1, 5.8, -10`          | Integers, floats etc.                                        |
+| `string`  | `` "Hi", 'Hi', `Hi` `` | All text values                                              |
+| `boolean` | `true or false`        |
+| `object`  | `{ age: 30 }`          | Pairs of `key` and `type` ending with `;` that can be nested |
+| `array`   | `[1,2,3]`              |
+| `tuple`   | `[1,2]`                | Array of fixed-length (TS extension)                         |
+| `enum`    | `enum { NEW, OLD }`    | Enumerated constant identifiers (TS extension)               |
+| `any`     | `*`                    | No specific type assignment                                  |
 
 ## Union Types
 
@@ -140,4 +139,25 @@ const add = (n1: number, n2: number) => {
 let combineValues: (a: number, b: number) => number;
 
 combineValues = add;
+```
+
+Also great for handling callbacks:
+
+```typescript
+const addNumbers = (n1: number, n2: number) => {
+  return n1 + n2;
+};
+
+const addAndHandle = (
+  n1: number,
+  n2: number,
+  someCallback: (num1: number) => void
+) => {
+  const result = n1 + n2;
+  someCallback(result);
+};
+
+addAndHandle(10, 20, (result) => {
+  console.log("result: ", result);
+});
 ```
