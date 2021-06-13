@@ -26,10 +26,10 @@ tsc --init
 
 ## Compiling
 
-Compile single file (if installed globally):
+Compile single file:
 
 ```
-tsc app.ts
+npx tsc app.ts
 ```
 
 Compile all files:
@@ -38,10 +38,10 @@ Compile all files:
 npx tsc
 ```
 
-Watch all file changes (if installed globally):
+Watch all file changes:
 
 ```
-tsc app.ts -w
+npx tsc app.ts -w
 ```
 
 Watch all file changes:
