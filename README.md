@@ -21,7 +21,7 @@ npm install typescript --save-dev
 Create `tsconfig.json` in the folder:
 
 ```
-tsc --init
+npx tsc --init
 ```
 
 ## Compiling
